@@ -8,5 +8,5 @@ end = int(input("End before: "))
 increment = int(input("Increment between values: "))
 print()
 
-for i in range(start , end, increment):
-  print(i)
+for i in range(start, end, increment):
+    print(i)

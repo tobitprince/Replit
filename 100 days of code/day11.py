@@ -13,6 +13,6 @@ leapyear_result = days_in_leapyear * hours_in_day * minutes_in_hour * seconds_in
 
 
 if days_this_year == 366:
-  print("Number of seconds in a leap year are", leapyear_result)
+    print("Number of seconds in a leap year are", leapyear_result)
 else:
-  print("Number of seconds in a year are", result)
+    print("Number of seconds in a year are", result)

@@ -4,18 +4,18 @@ print("Hello " + name)
 
 day = input("What day is it? ").capitalize()
 if day == "Monday":
-  print("Happy Monday!")
+    print("Happy Monday!")
 elif day == "Tuesday":
-  print("Happy Tuesday!")
+    print("Happy Tuesday!")
 elif day == "Wednesday":
-  print("Happy Wednesday!")
+    print("Happy Wednesday!")
 elif day == "Thursday":
-  print("Happy Thursday!")
+    print("Happy Thursday!")
 elif day == "Friday":
-  print("Happy Friday!")
+    print("Happy Friday!")
 elif day == "Saturday":
-  print("Happy Saturday!")
+    print("Happy Saturday!")
 elif day == "Sunday":
-  print("Happy Sunday!")
+    print("Happy Sunday!")
 else:
-  print("I don't know that day")
+    print("I don't know that day")

@@ -1,6 +1,8 @@
 print("Hello Replit")
 
-print("""
+print(
+    """
       something something something
       another thing
-      """)
+      """
+)
