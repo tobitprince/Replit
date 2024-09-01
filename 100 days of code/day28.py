@@ -41,7 +41,7 @@ def generate_Strength():
 
 
 while True:
-  os.system("clear")
+  os.system("cls")
   print("Character Builder")
   time.sleep(1)
   print()
@@ -75,7 +75,7 @@ while True:
     print("May their names go down in Legend...")
 
     time.sleep(4)
-    os.system("clear")
+    os.system("cls")
 
     print("Let the battle begin")
     count = 0
@@ -142,11 +142,11 @@ while True:
 
         break 
       time.sleep(4)
-      os.system("clear")
+      os.system("cls")
       print("The battle continues!")
     
     time.sleep(4)
-    os.system("clear")
+    os.system("cls")
     stop_playback = int(
       input("Press 2 anytime exit and go back to the menu: "))
     if stop_playback == 2:

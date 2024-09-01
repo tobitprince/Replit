@@ -27,7 +27,7 @@ def play():
       continue
 
 while True:
-  os.system("clear")
+  os.system("cls")
   print("🎵 MyPOD Music Player ")
   time.sleep(1)
   print("Press 1 to Play")

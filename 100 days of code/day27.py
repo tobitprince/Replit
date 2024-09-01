@@ -32,7 +32,7 @@ def generate_Strength():
 
 
 while True:
-  os.system("clear")
+  os.system("cls")
   print("Character Builder")
   time.sleep(1)
   print()
