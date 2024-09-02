@@ -7,7 +7,6 @@ import time
 
 to_do_list = []
 
-
 def print_list():
     """_summary_
     """
@@ -17,7 +16,6 @@ def print_list():
         print()
         print(f"{i}: {todolist}")
     time.sleep(2)
-
 
 print("To Do List Manager".center(35, "-"))
 
