@@ -1,4 +1,8 @@
-from getpass import getpass as input
+"""
+    Simple game of rock,paper and scissors.
+"""
+
+from getpass import getpass
 
 print("Rock, Paper and Scissors!!!")
 print()
@@ -9,9 +13,9 @@ player2 = input("Player 2 enter your name: ").title()
 print("Choose between (R,P,S)")
 print()
 
-player1Move = input(f"{player1},enter move: ")
+player1Move = getpass(f"{player1},enter move: ")
 print()
-player2Move = input(f"{player2}, enter move: ")
+player2Move = getpass(f"{player2}, enter move: ")
 print()
 
 if player1Move == "R":

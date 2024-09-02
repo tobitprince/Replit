@@ -1,3 +1,7 @@
+"""
+    This module says the generation you were born in.
+"""
+
 print()
 yob = int(input("What year were you born? "))
 if yob >= 1925 and yob <= 1946:

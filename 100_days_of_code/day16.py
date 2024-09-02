@@ -1,3 +1,7 @@
+"""
+    Fill the lyrics.
+"""
+
 print("Fill in the blank lyrics")
 print()
 print("Type in the blank lyrics and see if you are as cool as me")
@@ -6,17 +10,16 @@ print("Never going to ____ you up.")
 print()
 
 print("")
-count = 1
+COUNT = 1
 while True:
 
     lyric = input("What is the missing word?: ")
     if lyric == "give":
 
         break
-    else:
-        print("Nope, Try again")
-        count += 1
-if count == 1:
-    print(f"Woww! It only took you {count} attempt.")
+    print("Nope, Try again")
+    COUNT += 1
+if COUNT == 1:
+    print(f"Woww! It only took you {COUNT} attempt.")
 else:
-    print(f"Well done! It only took you {count} attempts.")
+    print(f"Well done! It only took you {COUNT} attempts.")

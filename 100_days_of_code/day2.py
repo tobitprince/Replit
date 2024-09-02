@@ -1,3 +1,7 @@
+"""
+    This module asks the user for their name, favorite food, and favorite music.
+"""
+
 print()
 print("Hello there")
 userName = input("What is your name? ")
@@ -6,6 +10,7 @@ favoriteFood = input("What is your favorite food? ")
 print("I like " + favoriteFood + " too!")
 favoriteMusic = input("What is your favorite music? ")
 print("I like " + favoriteMusic + " too!")
+
 
 print(
     """

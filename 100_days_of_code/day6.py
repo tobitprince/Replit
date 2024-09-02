@@ -1,3 +1,7 @@
+"""
+    Simple user interface.
+"""
+
 print("Welcome ")
 username = input("Please enter you username: ")
 password = input("Please enter you password: ")

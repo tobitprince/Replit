@@ -1,3 +1,7 @@
+"""
+    This module calculates the grade.
+"""
+
 testName = input("What is the name of the test? ")
 maxScore = int(input("What is the maximum score? "))
 score = int(input("What is your score? "))

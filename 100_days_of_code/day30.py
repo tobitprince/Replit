@@ -1,3 +1,7 @@
+"""
+The module asks the user how they are fairing on.
+"""
+
 print()
 print("30 Days Down".center(35))
 print("....................................")

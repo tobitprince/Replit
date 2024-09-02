@@ -1,46 +1,78 @@
+"""
+Character Battle
+"""
 import random
 import os
 import time
+import sys
 
 
-def generate_Character():
+def generate_character():
+    """_summary_
+
+    Returns:
+        _type_: _description_
+    """
     print("Generate Character")
     name = input("Name Your Legend: ")
     print()
-    type = input("Character Type (Human, Elf, Wiard, Orc): ")
+    character_type1 = input("Character Type (Human, Elf, Wiard, Orc): ")
 
-    return name, type
+    return name, character_type1
 
 
-def generate_Character2():
+def generate_character2():
+    """_summary_
+
+    Returns:
+        _type_: _description_
+    """
     print()
     print("Who are they battling?")
     name2 = input("Name Your Legend: ")
     print()
-    type2 = input("Character Type (Human, Elf, Wiard, Orc): ")
+    character_type2 = input("Character Type (Human, Elf, Wiard, Orc): ")
 
-    return name2, type2
+    return name2, character_type2
 
 
-def randomDice(sides):
+def random_dice(sides):
+    """_summary_
+
+    Args:
+        sides (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     roll = random.randint(1, sides)
     return roll
 
 
-def generate_Health():
-    sixSidedRoll = randomDice(6)
-    twelveSidedRoll = randomDice(12)
+def generate_health():
+    """_summary_
 
-    health = ((sixSidedRoll * twelveSidedRoll) / 2) + 10
+    Returns:
+        _type_: _description_
+    """
+    six_sided_roll = random_dice(6)
+    twelve_sided_roll = random_dice(12)
+
+    health = ((six_sided_roll * twelve_sided_roll) / 2) + 10
 
     return health
 
 
-def generate_Strength():
-    sixSidedRoll = randomDice(6)
-    twelveSidedRoll = randomDice(12)
+def generate_strength():
+    """_summary_
 
-    strength = ((sixSidedRoll * twelveSidedRoll) / 2) + 12
+    Returns:
+        _type_: _description_
+    """
+    six_sided_roll = random_dice(6)
+    twelve_sided_roll = random_dice(12)
+
+    strength = ((six_sided_roll * twelve_sided_roll) / 2) + 12
 
     return strength
 
@@ -58,12 +90,12 @@ while True:
 
     if userInput == 1:
         print("Name Your Legends and state their character Type")
-        character, type = generate_Character()
-        character2, type2 = generate_Character2()
-        health1 = generate_Health()
-        strength1 = generate_Strength()
-        health2 = generate_Health()
-        strength2 = generate_Strength()
+        character, typo1 = generate_character()
+        character2, typo2 = generate_character2()
+        health1 = generate_health()
+        strength1 = generate_strength()
+        health2 = generate_health()
+        strength2 = generate_strength()
 
         print()
         print(f"Your First Character: {character}")
@@ -82,7 +114,7 @@ while True:
         os.system("cls")
 
         print("Let the battle begin")
-        count = 0
+        COUNT = 0
         print(f"Your First Character: {character}")
         print(f"HEALTH: {health1}")
         print(f"STRENGTH: {strength1}")
@@ -94,8 +126,8 @@ while True:
         while True:
 
             if health1 > 1 and health2 > 1:
-                player1 = randomDice(6)
-                player2 = randomDice(6)
+                player1 = random_dice(6)
+                player2 = random_dice(6)
                 print(f"{character} rolls {player1}")
                 print(f"{character2} rolls {player2}")
                 if player1 > player2:
@@ -112,7 +144,7 @@ while True:
                     print(f"{character2}")
                     print(f"HEALTH: {health2}")
                     print()
-                    count += 1
+                    COUNT += 1
                 elif player2 > player1:
                     diff = (abs(strength1 - strength2)) + 1
                     health1 = health1 - diff
@@ -127,7 +159,7 @@ while True:
                     print(f"{character2}")
                     print(f"HEALTH: {health2}")
                     print()
-                    count += 1
+                    COUNT += 1
                 else:
                     print("What are the chances!!The battle ends in a draw")
                     print()
@@ -138,15 +170,15 @@ while True:
                     print(f"{character2}")
                     print(f"HEALTH: {health2}")
                     print()
-                    count += 1
+                    COUNT += 1
 
             else:
                 if health1 > 1:
                     print(f"Oh no {character2} has died!")
-                    print(f"{character} destroyed {character2} in {count} rounds!")
+                    print(f"{character} destroyed {character2} in {COUNT} rounds!")
                 else:
                     print(f"Oh no {character} has died!")
-                    print(f"{character2} destroyed {character} in {count} round(s)!")
+                    print(f"{character2} destroyed {character} in {COUNT} round(s)!")
 
                 break
             time.sleep(4)
@@ -161,6 +193,6 @@ while True:
         else:
             continue
     elif userInput == 2:
-        exit()
+        sys.exit()
     else:
         continue

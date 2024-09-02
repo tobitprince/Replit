@@ -1,3 +1,7 @@
+"""
+    Day 4: Adventure Story Simulator.
+"""
+
 print("Welcome to your Adventure Story Simulator.")
 print()
 print(
@@ -23,7 +27,8 @@ print(
     superPower,
     "will make sure you never have to look at",
     enemyName,
-    "again." "Go eat",
+    "again.",
+    "Go eat",
     food,
     "as you walk down the streets of",
     live,

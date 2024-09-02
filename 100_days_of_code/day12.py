@@ -1,3 +1,7 @@
+"""
+    Simple quiz.
+"""
+
 print("100 Days of Code QUIZ")
 print()
 print("How many can you answer correctly?")

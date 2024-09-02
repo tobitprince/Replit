@@ -1,3 +1,7 @@
+"""
+Designing a user interface.
+"""
+
 # black = '\033[30m'
 # red = '\033[31m'
 # green = '\033[32m'
@@ -15,7 +19,13 @@
 # lightcyan = '\033[96m
 
 
-def newPrint(color, word):
+def new_print(color, word):
+    """_summary_
+
+    Args:
+        color (_type_): _description_
+        word (_type_): _description_
+    """
     if color == "red":
         print("\033[31m", word)
     elif color == "green":
@@ -33,27 +43,27 @@ def newPrint(color, word):
 
 
 print()
-newPrint("orange", "--- Music App ---".center(35))
+new_print("orange", "--- Music App ---".center(35))
 print()
-newPrint("reset", "🔥▶️  Radio Gaga")
-newPrint("yellow", "Queen".center(15))
-print()
-print()
-newPrint("reset", "PREV")
-newPrint("green", "NEXT".center(16))
-newPrint("purple", "PAUSE".center(32))
+new_print("reset", "🔥▶️  Radio Gaga")
+new_print("yellow", "Queen".center(15))
 print()
 print()
+new_print("reset", "PREV")
+new_print("green", "NEXT".center(16))
+new_print("purple", "PAUSE".center(32))
 print()
 print()
-newPrint("reset", "WELCOME TO".center(35))
-newPrint("blue", "-----  ARMBOOK -----".center(35))
 print()
-newPrint("yellow", "Definitely not a rip off of".rjust(35))
+print()
+new_print("reset", "WELCOME TO".center(35))
+new_print("blue", "-----  ARMBOOK -----".center(35))
+print()
+new_print("yellow", "Definitely not a rip off of".rjust(35))
 print("a certain other social".rjust(36))
 print("networking site".rjust(36))
 print()
-newPrint("red", "Honest.".center(33))
+new_print("red", "Honest.".center(33))
 print()
-newPrint("reset", "Username: ".center(35))
+new_print("reset", "Username: ".center(35))
 print("Password: ".center(37))

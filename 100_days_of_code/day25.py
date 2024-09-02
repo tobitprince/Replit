@@ -1,13 +1,27 @@
-def anyDice(sides):
-    import random
+"""
+This module rolls a dice that generates character stats.
+"""
 
-    result = random.randint(1, sides)
+import random
+
+
+def any_dice(num_sides):
+    """
+    Rolls a dice of any number of sides
+    """
+
+    result = random.randint(1, num_sides)
     return result
 
 
 def dice6_8():
-    six = anyDice(6)
-    eight = anyDice(8)
+    """_summary_
+
+    Returns:
+        _type_: _description_
+    """
+    six = any_dice(6)
+    eight = any_dice(8)
 
     result = six * eight
     return result
@@ -15,9 +29,9 @@ def dice6_8():
 
 print("Character Health Stats")
 print()
-character = "yes"
+CHARACTER = "yes"
 
-while character == "yes":
+while CHARACTER == "yes":
     health = dice6_8()
     print(f"Character health stat is {health} hp")
-    character = input("Generate for another character?: ")
+    CHARACTER = input("Generate for another character?: ")

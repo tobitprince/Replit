@@ -1,3 +1,7 @@
+"""
+    Marvel Movie Character Creator.
+"""
+
 print("Marvel Movie Character Creator")
 print("--")
 print()

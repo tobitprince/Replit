@@ -1,3 +1,7 @@
+"""
+    This module calculates the bill.
+"""
+
 bill = float(input("What was the total bill? KES "))
 tip = int(input("What percentage tip would you like? "))
 total = bill + (bill * tip / 100)

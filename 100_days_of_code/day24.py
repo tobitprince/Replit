@@ -1,7 +1,15 @@
-def rollDice(sides):
-    import random
+"""
+This module rolls a dice
+"""
 
-    roll = random.randint(1, sides)
+import random
+
+def roll_dice(num_sides):
+    """
+    Roll a dice.
+    """
+
+    roll = random.randint(1, num_sides)
     print(f"You rolled {roll}")
 
 
@@ -10,11 +18,10 @@ print()
 print()
 sides = int(input("How many sides?: "))
 while True:
-    rollDice(sides)
+    roll_dice(sides)
     answer = input("Roll again?: ").lower()
 
     if answer == "yes":
         continue
-    else:
-        break
+    break
 print("Goodbye!")

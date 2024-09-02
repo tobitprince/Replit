@@ -1,3 +1,7 @@
+"""
+    Simple order program.
+"""
+
 order = input("What would you like to order: pizza or hamburger? ")
 if order == "hamburger":
     print("Thank you.")

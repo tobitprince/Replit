@@ -1,3 +1,7 @@
+"""
+This module prints a greeting message and a multiline string.
+"""
+
 print("Hello Replit")
 
 print(

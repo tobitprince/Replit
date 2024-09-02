@@ -1,4 +1,14 @@
-def newPrint(color, word):
+"""
+This module changes color.
+"""
+
+def new_print(color, word):
+    """_summary_
+
+    Args:
+        color (_type_): _description_
+        word (_type_): _description_
+    """
     if color == "red":
         print("\033[31m", word, sep="", end="")
     elif color == "green":
@@ -11,7 +21,7 @@ def newPrint(color, word):
 
 print("Super Subroutine")
 print("With my ", end="")
-newPrint("red", "new program")
-newPrint("reset", "I can just call red('and')")
-newPrint("red", "it will print in red ")
-newPrint("blue", "or even blue")
+new_print("red", "new program")
+new_print("reset", "I can just call red('and')")
+new_print("red", "it will print in red ")
+new_print("blue", "or even blue")

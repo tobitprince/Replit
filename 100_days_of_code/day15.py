@@ -1,5 +1,9 @@
-exit = "no"
-while exit == "no":
+"""
+    This module generates an animal sound.
+"""
+
+EXIT = "no"
+while EXIT == "no":
     print("Animal sound")
     print()
     animal = input("What animal do you want?: ").lower()
@@ -10,4 +14,4 @@ while exit == "no":
         print(f"A {animal} goes mee")
     else:
         print("I don't know that animal. Try again")
-    exit = input("Do you want to exit?: ").lower()
+    EXIT = input("Do you want to exit?: ").lower()

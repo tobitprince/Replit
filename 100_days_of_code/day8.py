@@ -1,3 +1,7 @@
+"""
+    Days of the week.
+"""
+
 name = input("What is your name? ")
 print("Hello " + name)
 # This is a comment

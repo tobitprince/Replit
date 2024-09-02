@@ -1,38 +1,65 @@
+"""
+Character Generator.
+"""
 import random
 import os
 import time
+import sys
 
 
-def generate_Character():
+def generate_character():
+    """_summary_
+
+    Returns:
+        _type_: _description_
+    """
     print("Generate Character")
     name = input("Name Your Legend: ")
     print()
-    type = input("Character Type (Human, Elf, Wiard, Orc): ")
+    character_type = input("Character Type (Human, Elf, Wiard, Orc): ")
 
-    return name, type
+    return name, character_type
 
 
-def randomDice(sides):
+def random_dice(sides):
+    """_summary_
+
+    Args:
+        sides (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     roll = random.randint(1, sides)
     return roll
 
 
-def generate_Health():
-    sixSidedRoll = randomDice(6)
-    twelveSidedRoll = randomDice(12)
+def generate_health():
+    """_summary_
 
-    health = ((sixSidedRoll * twelveSidedRoll) / 2) + 10
+    Returns:
+        _type_: _description_
+    """
+    six_sided_roll = random_dice(6)
+    twelve_sided_roll = random_dice(12)
 
-    return health
+    generated_health = ((six_sided_roll * twelve_sided_roll) / 2) + 10
+
+    return generated_health
 
 
-def generate_Strength():
-    sixSidedRoll = randomDice(6)
-    twelveSidedRoll = randomDice(12)
+def generate_strength():
+    """_summary_
 
-    strength = ((sixSidedRoll * twelveSidedRoll) / 2) + 12
+    Returns:
+        _type_: _description_
+    """
+    six_sided_roll = random_dice(6)
+    twelve_sided_roll = random_dice(12)
 
-    return strength
+    character_strength = ((six_sided_roll * twelve_sided_roll) / 2) + 12
+
+    return character_strength
 
 
 while True:
@@ -48,12 +75,12 @@ while True:
 
     if userInput == 1:
         print("Name Your Legend and state it's character Type")
-        character, type = generate_Character()
+        character, typo = generate_character()
 
         print()
         print(f"Your Character: {character}")
-        health = generate_Health()
-        strength = generate_Strength()
+        health = generate_health()
+        strength = generate_strength()
         print(f"HEALTH: {health}")
         print(f"STRENGTH: {strength}")
         print()
@@ -67,6 +94,6 @@ while True:
         else:
             continue
     elif userInput == 2:
-        exit()
+        sys.exit()
     else:
         continue

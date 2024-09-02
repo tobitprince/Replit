@@ -1,9 +1,13 @@
+"""
+This module plays a sound
+"""
 import os
 import time
-
+import sys
 import pygame
 
-pygame.init()
+pygame.mixer.pre_init()
+# pygame.init() is not necessary, so you can remove this line
 pygame.mixer.init()
 sound = pygame.mixer.Sound("audio.wav")
 sound.play()
@@ -11,6 +15,8 @@ pygame.mixer.pause()
 
 
 def pause():
+    """_summary_
+    """
     pygame.mixer.pause()
 
 
@@ -18,6 +24,11 @@ pause()
 
 
 def play():
+    """_summary_
+
+    Returns:
+        _type_: _description_
+    """
     # Play the sound
     pygame.mixer.unpause()
     while True:
@@ -27,8 +38,7 @@ def play():
         if stop_playback == 2:
             pause()
             return  # let's go back from this play() subroutine
-        else:
-            continue
+        continue
 
 
 while True:
@@ -42,7 +52,6 @@ while True:
     if userInput == 1:
         print("Playing some proper tunes!")
         play()
-    elif userInput == 2:
-        exit()
-    else:
-        continue
+    if userInput == 2:
+        sys.exit()
+    continue

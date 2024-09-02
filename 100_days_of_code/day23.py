@@ -1,4 +1,11 @@
-def loginSystem():
+"""
+This is a simple login system.
+"""
+
+def login_system():
+    """
+    Simple routine.
+    """
 
     print("Login System")
     print()
@@ -9,9 +16,8 @@ def loginSystem():
         if username == "chimi" and password == "123":
             print("Welcome Chimi")
             break
-        else:
-            print("That's not correct. Try again!")
-            continue
+        print("That's not correct. Try again!")
+        continue
 
 
-loginSystem()
+login_system()
