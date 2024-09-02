@@ -1,18 +1,25 @@
 """
-    This module says the generation you were born in.
+This module says the generation you were born in.
 """
 
+def determine_generation(year_of_birth):
+    """
+    Determine the generation based on the year of birth.
+    """
+    if 1925 <= year_of_birth <= 1946:
+        return "You are a Traditionalist."
+    elif 1947 <= year_of_birth <= 1964:
+        return "You are a Baby Boomer."
+    elif 1965 <= year_of_birth <= 1981:
+        return "You are a Generation X"
+    elif 1982 <= year_of_birth <= 1995:
+        return "You are a Millenial"
+    elif 1996 <= year_of_birth <= 2015:
+        return "You are a Generation Z"
+    else:
+        return "You are a Generation Alpha"
+
 print()
-yob = int(input("What year were you born? "))
-if yob >= 1925 and yob <= 1946:
-    print("You are a Traditionalist.")
-elif yob >= 1947 and yob <= 1964:
-    print("You are a Baby Boomer.")
-elif yob >= 1965 and yob <= 1981:
-    print("You are a Generation X")
-elif yob >= 1982 and yob <= 1995:
-    print("You are a Millenial")
-elif yob >= 1996 and yob <= 2015:
-    print("You are a Generation Z")
-else:
-    print("You are a Generation Alpha")
+year_of_birth1 = int(input("What year were you born? "))
+GENERATION_MESSAGE = determine_generation(year_of_birth1)
+print(GENERATION_MESSAGE)
