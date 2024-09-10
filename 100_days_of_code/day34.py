@@ -52,8 +52,9 @@ def spam():
 
 
 while True:
-    print()
+    os.system("cls")
     print("Get Spamming".center(35,"-"))
+    print()
     menu = int(input("1: Add Email\n 2: Remove Email\n 3: Show Emails\n 4: Start Spamming\n"))
 
     if menu == 1:
