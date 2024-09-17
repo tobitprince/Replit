@@ -6,9 +6,9 @@
 def prettyprint():
     """_summary_
     """
-    for row in lists2d:
-        for item in row: 
-            print(f"{item:^10}", end=" | ")
+    for list_row in lists2d:
+        for list_item in list_row:
+            print(f"{list_item:^10}", end=" | ")
         print()
     print()
 
