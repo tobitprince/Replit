@@ -19,7 +19,7 @@ thisdict.update({"address":input("Input your address > ")})
 os.system("cls")
 print()
 print(
-f"Hi {thisdict['name']}. Our dictionary says that "
+f"Hi {thisdict['name']}. \n Our dictionary says that "
 f"you were born on {thisdict['dob']},"
 f"we can call you on {thisdict['telephone']}," 
 f"email {thisdict['email']},"
