@@ -18,7 +18,7 @@ for rows in scores:
         if int(data[1]) > HIGHSCORE:
             HIGHSCORE = int(data[1])
             NAME = data[0]
-print("*Current Leader".center(23, "-"))
+os.system("cls")
 for i in range(1,5):
     print(f"Analyzing High Scores {'.'*(i+1)}")
     time.sleep(1)
