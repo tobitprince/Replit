@@ -11,7 +11,7 @@ while True:
     print()
     initials = input("Input your initials: ").capitalize()
     score = input("Input your score: ")
-    f = open("high.score", "a+")
+    f = open("high.score", "a+", encoding= "utf-8")
     f.write(f"{initials} {score}\n")
     f.close()
 
