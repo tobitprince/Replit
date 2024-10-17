@@ -16,7 +16,7 @@ cleaned_content = re.sub(r'\b(ORIGIN|1|61)\b|//|\s+', '', content)
 with open('preproinsulin-seq-clean.txt', 'w', encoding="utf-8") as file:
     file.write(cleaned_content)
 
-#verifying total length  
+#verifying total length
 assert len(cleaned_content) == 110, f"Expected 110 characters , got {len(cleaned_content)}"
 
 lsinsulin_seq = cleaned_content[0:24]
