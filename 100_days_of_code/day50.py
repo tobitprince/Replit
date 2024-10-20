@@ -22,13 +22,13 @@ def new_idea():
     # ideas.append(new)
     with open("my.ideas", "+a", encoding="utf-8") as file:
         file.write(f"{new}\n")
-    print("Nice! Your idea has been stored")
 
 def see_random():
     """_summary_
     """
     with open("my.ideas", "r", encoding="utf-8") as file:
         maneno = file.read().split("\n")
+    maneno.remove("")
     choice = random.choice(maneno)
     print(choice.title())
 
@@ -39,6 +39,11 @@ while True:
     if option[0] == "a":
         pretty_print()
         new_idea()
+        os.system("cls")
+        time.sleep(1)
+        pretty_print()
+        print("Nice! Your idea has been stored")
+        time.sleep(1)
     elif option[0] == "r":
         see_random()
     else:
