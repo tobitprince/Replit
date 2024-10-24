@@ -1,8 +1,11 @@
 import os
 import time
+import ast
+
 todo = []
-# with open("todolist.txt", "r", encoding="utf8") as file:
-#     todo =
+with open("todolist.txt", "r", encoding="utf8") as file:
+    content = file.read()
+    todo = ast.literal_eval(content)
 
 def add():
     """_summary_
@@ -40,8 +43,10 @@ def edit():
         if find in row:
             todo.remove(row)
             add()
-        else:
-            print("Task not found")
+            break
+    else:
+        print("Task not found")
+        time.sleep(2)
 
 def remove():
     """_summary_
@@ -51,10 +56,12 @@ def remove():
     for row in todo:
         if find in row:
             todo.remove(row)
-        else:
-            print("Task not found")
+            print("Task removed successfully")
             break
-    print("Task removed successfully")
+    else:
+        print("Task not found")
+        time.sleep(1)
+
 
 while True:
     os.system("cls")
@@ -69,7 +76,8 @@ while True:
     elif option == 4:
         remove()
     else:
-        exit()
+        print("Invalid choice, please try again.")
+        time.sleep(1)
 
     time.sleep(1)
     with open("todolist.txt","w",encoding="utf8") as file:

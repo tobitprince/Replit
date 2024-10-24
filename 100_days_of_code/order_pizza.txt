@@ -1,0 +1,1 @@
+[['chimi', 'cheese', 'small', 3, 1500], ['hafsa', 'macaroni', 'large', 2, 2000], ['saliba', 'bacon', 'medium', 4, 2800]]
