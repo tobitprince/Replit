@@ -1,0 +1,1 @@
+['Sword', 'Knife', 'Sword', 'Bullet', 'Bullet', 'Bullet']
